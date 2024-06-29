@@ -1,0 +1,1 @@
+This repository will be filled with small projects that utilize data structures and algorithms.
