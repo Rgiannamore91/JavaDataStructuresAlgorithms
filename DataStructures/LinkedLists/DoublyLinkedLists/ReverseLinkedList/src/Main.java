@@ -13,6 +13,19 @@ public class Main {
 		presidents.addToTail("Joe Biden");
 		
 		presidents.printList();
+		
+		presidents = reverse(presidents);
+		presidents.printList();
+	}
+	public static LinkedList reverse(LinkedList list) {
+//		Node currentHead = list.head;
+		LinkedList reversed = new LinkedList();
+		
+		while (list.head != null) {
+			reversed.addToHead(list.removeHead());	
+			
+		}
+		return reversed;
 	}
 
 }
