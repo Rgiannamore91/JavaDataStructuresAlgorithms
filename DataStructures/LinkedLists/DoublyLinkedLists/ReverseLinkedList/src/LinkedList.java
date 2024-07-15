@@ -35,7 +35,12 @@ public class LinkedList {
 		String output = "<head>";
 		Node currentNode = this.head;
 		while (currentNode != null) {
-			output += currentNode.data + " ";
+			if (currentNode.getNextNode() != null) {
+				output += currentNode.data + ", ";
+			} else {
+				output += currentNode.data + " ";
+			}
+			
 			currentNode = currentNode.getNextNode();
 		}
 		output += "<tail>";
